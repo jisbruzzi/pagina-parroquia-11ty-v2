@@ -4,7 +4,7 @@
       {% for section in collections.sections %}
       <div class="sm:w-1/2 w-full text-justify prose mb-6 sm:px-3">
         <div className="is-italic is-size-7 is-transparent">
-          Última actualización: asd
+          Última actualización: {{ section.date | readableDate }}
         </div>
         <div>{{section.templateContent | safe}}</div>
       </div>
