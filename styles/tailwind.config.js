@@ -13,8 +13,13 @@ module.exports = {
     extend: {
       colors: {
         change: 'black',
+        sanjoseText:'rgba(0, 0, 0, 0.7)'
       },
     },
+    fontFamily:{
+      'sans':['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
+      'serif':['Garamond', 'Baskerville', 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', 'serif']
+    }
   },
   variants: {},
   plugins: [
