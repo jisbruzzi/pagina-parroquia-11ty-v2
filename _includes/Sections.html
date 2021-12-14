@@ -1,0 +1,14 @@
+<section class="py-12 px-6">
+  <div class="p-3">
+    <div class="masonry" data-masonry='{ "itemSelector": ".masonry .prose", "columnWidth":".masonry .prose" }'>
+      {% for section in collections.sections %}
+      <div class="sm:w-1/2 w-full text-justify prose mb-6 sm:px-3">
+        <div className="is-italic is-size-7 is-transparent">
+          Última actualización: asd
+        </div>
+        <div>{{section.templateContent | safe}}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

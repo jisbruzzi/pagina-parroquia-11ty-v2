@@ -1,25 +1,26 @@
 <html>
+
 <head>
-    <link rel="stylesheet" href="{{ '/style.css' | url }}"/>
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ '/style.css' | url }}" />
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
 </head>
+
 <body class="text-sanjoseText">
-{% include 'Hero.html' %}
+  {% include 'Hero.html' %}
+  <div class="w-full ">
+    <div class="mx-auto container">
+      {% include 'Sections.html' %}
+    </div>
+  </div>
 
-for seccion is secciones:
-{% for section in collections.sections %}
-    <h1>{{section.data.title}}</h1>
-    <main>{{section.templateContent | safe}}</main>
-    <div>{{section.url}}</div>
-    ke
-{% endfor %}
-
-{% for photo in collections.photos %}
-    <h1>{{photo.data.title}}</h1>
-    <main>{{photo.templateContent | safe}}</main>
-    <div>{{photo.url}}</div>
-    ke
-{% endfor %}
+  {% for photo in collections.photos %}
+  <h1>{{photo.data.title}}</h1>
+  <main>{{photo.templateContent | safe}}</main>
+  <div>{{photo.url}}</div>
+  ke
+  {% endfor %}
 
 </body>
+
 </html>
