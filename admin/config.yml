@@ -1,0 +1,54 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+media_folder: /assets
+public_folder: /assets
+
+collections:
+  - name: seccion
+    label: Sección
+    folder: /secciones
+    create: true
+    fields:
+      - { name: title, label: Nombre de la sección }
+      - name: position
+        label: "Posicion"
+        hint: "Posición de la sección, la 1 va primera, la 2 va segunda..."
+        widget: "number"
+        value_type: "int"
+        min: 1
+      - label: "Última actualización"
+        name: "date"
+        widget: "datetime"
+        default: ""
+        date_format: "DD/MM/YYYY"
+        time_format: "HH:mm"
+        format: "LLL"
+      - { name: body, label: Texto, widget: markdown }
+  - name: photos
+    label: Fotos
+    folder: /photos
+    create: true
+    fields:
+      - { name: description, label: Descripción de la foto }
+      - name: position
+        label: "Posicion"
+        hint: "Posición de la foto, la 1 va primera, la 2 va segunda..."
+        widget: "number"
+        value_type: "int"
+        min: 1
+      - label: "Foto"
+        name: "photo"
+        widget: "image"
+        media_library:
+          config:
+            multiple: false
+  - name: blog
+    label: Blog
+    folder: /blog
+    create: true
+    fields:
+      - { name: date, label: Fecha de publicación, widget: datetime }
+      - { name: title, label: Título }
+      - { name: body, label: Texto, widget: markdown }
