@@ -1,12 +1,38 @@
-<section class="py-12 px-6">
+<style>
+  .prose {
+    max-width: none;
+  }
+
+  .prose h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+  .prose ul > li {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .prose ul > li:not(:first-child) {
+    margin-top: 4px;
+  }
+  .prose ul {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .prose a {
+    color: rgb(50, 115, 220);
+    font-weight: normal;
+  }
+</style>
+<section class="py-4 lg:px-20">
   <div class="p-3">
-    <div class="masonry" data-masonry='{ "itemSelector": ".masonry .prose", "columnWidth":".masonry .prose" }'>
+    <div class="masonry" data-masonry='{ "itemSelector": ".masonry .column", "columnWidth":".masonry .column" }'>
       {% for section in collections.sections | sortByPosition %}
-      <div class="sm:w-1/2 w-full text-justify prose mb-6 sm:px-3">
+      <div class="sm:w-1/2 w-full text-justify column p-3 mb-6">
         <div class="italic text-xs opacity-50">
           Última actualización: {{ section.date | readableDate }}
         </div>
-        <div>{{section.templateContent | safe}}</div>
+        <div class="prose">{{section.templateContent | safe}}</div>
       </div>
       {% endfor %}
     </div>
