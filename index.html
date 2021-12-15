@@ -11,8 +11,12 @@
   <div class="w-full ">
     <div class="mx-auto container">
       {% include 'Sections.html' %}
+      <hr/>
+      
     </div>
   </div>
+  
+
 
   {% for photo in collections.photos %}
   <h1>{{photo.data.title}}</h1>
@@ -20,6 +24,8 @@
   <div>{{photo.url}}</div>
   ke
   {% endfor %}
+
+  {% include 'Footer.html' %}
 
 </body>
 
