@@ -1,7 +1,7 @@
 ---
 title: Secretaría
 position: 2
-lastUpdate: December 9, 2021 12:47 PM
+date: 2021-12-15T09:56:05
 ---
 ### Secretaría Parroquial
 Martes y Viernes de 17:00 hs a 19:00 hs
