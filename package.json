@@ -7,7 +7,7 @@
     "watch": "eleventy --watch",
     "serve": "eleventy --serve",
     "start": "eleventy --serve & tailwindcss -i styles/tailwind.css -c styles/tailwind.config.js -o _site/style.css --watch",
-    "styles":"tailwindcss -i styles/tailwind.css -c styles/tailwind.config.js -o _site/style.css --watch",
+    "styles": "tailwindcss -i styles/tailwind.css -c styles/tailwind.config.js -o _site/style.css --watch",
     "debug": "DEBUG=* eleventy"
   },
   "repository": {
@@ -34,6 +34,7 @@
     "markdown-it-anchor": "^8.1.2"
   },
   "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/typography": "^0.4.1",
     "tailwindcss": "^2.2.19"
   }

@@ -12,21 +12,10 @@
     <div class="mx-auto container">
       {% include 'Sections.html' %}
       <hr/>
-      
+      {% include 'Photos.html' %}
     </div>
   </div>
-  
-
-
-  {% for photo in collections.photos %}
-  <h1>{{photo.data.title}}</h1>
-  <main>{{photo.templateContent | safe}}</main>
-  <div>{{photo.url}}</div>
-  ke
-  {% endfor %}
-
   {% include 'Footer.html' %}
-
 </body>
 
 </html>
