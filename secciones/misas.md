@@ -2,6 +2,7 @@
 title: Misas
 position: 1
 lastUpdate: December 9, 2021 12:47 PM
+date: December 15, 2021 9:48 AM
 ---
 # Misas
 
@@ -18,3 +19,5 @@ A partir de Enero inclusive, las misas de domingo serán a las 10hs y 19hs.
 * Misas del domingo 26/12: 11:30hs y 19hs
 * Misas de María, Madre de Dios: 31/12 19hs y 1/1 11:30hs y 19hs
 * Misas del 2/1: 10 y 19hs
+
+hola, prueba
