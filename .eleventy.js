@@ -48,21 +48,9 @@ module.exports = function(eleventyConfig) {
     return Math.min.apply(null, numbers);
   });
 
-  function filterTagList(tags) {
-    return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
-  }
-
-  eleventyConfig.addFilter("filterTagList", filterTagList)
-
-  // Create an array of all tags
-  eleventyConfig.addCollection("tagList", function(collection) {
-    let tagSet = new Set();
-    collection.getAll().forEach(item => {
-      (item.data.tags || []).forEach(tag => tagSet.add(tag));
-    });
-
-    return filterTagList([...tagSet]);
-  });
+  eleventyConfig.addFilter("sortByPosition", function sortByPosition(positionableList) {
+    return positionableList.sort((a,b)=>a.data.position-b.data.position)
+  })
 
   // Copy the `img` and `css` folders to the output
   eleventyConfig.addPassthroughCopy("img");

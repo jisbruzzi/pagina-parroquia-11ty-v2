@@ -1,9 +1,9 @@
 <section class="py-12 px-6">
   <div class="p-3">
     <div class="masonry" data-masonry='{ "itemSelector": ".masonry .prose", "columnWidth":".masonry .prose" }'>
-      {% for section in collections.sections %}
+      {% for section in collections.sections | sortByPosition %}
       <div class="sm:w-1/2 w-full text-justify prose mb-6 sm:px-3">
-        <div className="is-italic is-size-7 is-transparent">
+        <div class="italic text-xs opacity-50">
           Última actualización: {{ section.date | readableDate }}
         </div>
         <div>{{section.templateContent | safe}}</div>
