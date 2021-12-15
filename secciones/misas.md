@@ -2,7 +2,6 @@
 title: Misas
 position: 1
 lastUpdate: December 9, 2021 12:47 PM
-date: December 15, 2021 9:48 AM
 ---
 # Misas
 

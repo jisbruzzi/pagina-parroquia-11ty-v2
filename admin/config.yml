@@ -24,7 +24,7 @@ collections:
         default: ""
         date_format: "DD/MM/YYYY"
         time_format: "HH:mm"
-        format: "LLL"
+        format: "YYYY-MM-DDThh:mm:ss"
       - { name: body, label: Texto, widget: markdown }
   - name: photos
     label: Fotos
