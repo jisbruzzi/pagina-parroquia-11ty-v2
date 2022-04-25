@@ -7,3 +7,4 @@ date: 2022-01-24T02:40:25
 
 * Martes, jueves, viernes y sábados 19hs
 * Domingos 10hs y 19hs
+* edición de prueba
