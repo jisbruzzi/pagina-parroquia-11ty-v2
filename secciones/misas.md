@@ -5,5 +5,5 @@ date: 2022-01-24T02:40:25
 ---
 # Misas
 
-* Martes, jueves, viernes y sábados 19hs
-* Domingos 10hs y 19hs
+* Martes, jueves, viernes y sábados 18hs
+* Domingos 10hs; 11:30 y 18hs
