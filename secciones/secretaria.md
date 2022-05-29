@@ -1,11 +1,11 @@
 ---
 title: Secretaría
 position: 2
-date: 2022-05-21T07:46:24
+date: 2022-05-29T12:31:02
 ---
 # Secretaría Parroquial
 
-Martes y Viernes de 16:00 hs a 18:00 hs
+Martes y Jueves de 16:00 hs a 18:00 hs
 
 4207-7470
 
