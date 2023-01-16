@@ -1,11 +1,12 @@
 ---
 title: Secretaría
 position: 2
-date: 2022-05-29T12:31:02
+date: 2023-01-16T01:15:10
 ---
 # Secretaría Parroquial
 
-Martes y Jueves de 16:00 hs a 18:00 hs
+- Del 16 al 31 de enero no atiende (vacaciones)
+- A partir del 2 de febrero: martes y jueves de 17 a 19 hs, personalmente o por teléfono, facebook o mail.
 
 4207-7470
 
